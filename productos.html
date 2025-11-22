@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario y Ventas - Detalles | PacxStudio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="IMG/logo.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+                    <img src="IMG/logo.png" alt="PacxStudio Logo" class="logo-image">
+                    <span>PacxStudio</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html#inicio" class="nav-link">Inicio</a>
+                    <a href="index.html#productos" class="nav-link">Productos</a>
+                    <a href="index.html#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="index.html#contacto" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-hero">
+        <div class="container">
+            <button class="back-button" onclick="window.location.href='index.html#productos'">← Volver</button>
+            <div class="product-hero-content">
+                <div class="product-hero-image">
+                    <img src="IMG/Captura de pantalla de productos.png" alt="SistemaPOS Simple" class="hero-product-icon">
+                </div>
+                <div class="product-hero-info">
+                    <span class="product-category">Software de Gestión</span>
+                    <h1 class="product-hero-title">Sistema de Inventario y Ventas</h1>
+                    <p class="product-hero-description">La solución completa para gestionar tu negocio de manera sencilla y eficiente. Sin complicaciones técnicas, solo resultados.</p>
+                    <div class="product-hero-price">
+                        <span class="price-amount">$35.00</span>
+                        <span class="price-tag">Pago único</span>
+                    </div>
+                <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="abrirCompra()"> Comprar Ahora
+                </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-description">
+        <div class="container">
+            <div class="description-content">
+                <h2 class="section-title">Descripción Completa</h2>
+                <div class="description-text">
+                    <h3>¿Por qué elegir este software?</h3>
+                    <p>Este pequeño programa nació de la necesidad de pequeños emprendedores que buscaban una solución sin complicaciones para gestionar sus negocios. A diferencia de otros sistemas costosos y difíciles de usar, nuestro software está diseñado pensando en personas que no son expertas en tecnología.</p>
+                    
+                    <h3>Perfecto para:</h3>
+                    <ul class="description-list">
+                        <li>Tiendas de barrio y abarrotes</li>
+                        <li>Cualquier negocio que venda productos</li>
+                    </ul>
+
+                    <h3>Lo que incluye:</h3>
+                    <ul class="description-list">
+                        <li>✓ Licencia de por vida (sin mensualidades)</li>
+                        <li>✓ Soporte técnico por correo</li>
+                    </ul>
+
+                    <h3>Requisitos del sistema:</h3>
+                    <ul class="description-list">
+                        <li>Windows 10 / Windows 11</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="product-screenshots">
+    <div class="container">
+        <h2 class="section-title">Capturas de Pantalla</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de corte.png" alt="Pantalla de corte de caja" class="screenshot-image">
+                <p class="screenshot-caption">Corte de Caja</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de entradas.png" alt="Registro de entradas" class="screenshot-image">
+                <p class="screenshot-caption">Control de Entradas</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de inventario.png" alt="Gestión de inventario" class="screenshot-image">
+                <p class="screenshot-caption">Módulo de Inventario</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de productos.png" alt="Catálogo de productos" class="screenshot-image">
+                <p class="screenshot-caption">Catálogo de Productos</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de reportes.png" alt="Reportes y estadísticas" class="screenshot-image">
+                <p class="screenshot-caption">Reportes y Estadísticas</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="IMG/Captura de pantalla de salidas.png" alt="Control de salidas" class="screenshot-image">
+                <p class="screenshot-caption">Control de Salidas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="product-video">
+    <div class="container">
+        <h2 class="section-title">Video Demostración</h2>
+        <div class="video-container">
+            <div class="video-link-card">
+                <a href="https://www.youtube.com/watch?v=DTJeEbgHHiI&t=74s" target="_blank" class="video-thumbnail-link">
+                    <img src="https://img.youtube.com/vi/DTJeEbgHHiI/maxresdefault.jpg" alt="Video Demo Sistema POS" class="video-thumbnail-img">
+                    <div class="play-button">▶</div>
+                </a>
+                <div class="video-info">
+                    <h3 class="video-title">Sistema de Inventario y Ventas</h3>
+                    <p class="video-description">Mira cómo funciona nuestro programa en acción. En este video de 4:20 minutos te mostramos todas las funcionalidades principales del sistema.</p>
+                    <a href="https://www.youtube.com/watch?v=DTJeEbgHHiI&t=74s" target="_blank" class="btn btn-primary btn-watch-video">▶ Ver Video en YouTube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PacxStudio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="productos.js"></script>
+    <script>
+    function abrirCompra() {
+        window.open('https://payhip.com/b/B4kyl', '_blank');
+    }
+</script>
+</body>
+</html>

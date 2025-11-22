@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacxStudio</title>    
+    <link rel="icon" type="image/png" href="IMG/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+        <div class="logo">
+            <img src="IMG/logo.png" alt="PacxStudio Logo" class="logo-image">
+            <span>PacxStudio</span>
+        </div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="pixel-title">Software Sencillo<br>para Personas Eficientes</h1>
+                <p class="hero-description">Productos digitales que simplifican tu vida. Sin complicaciones, solo resultados.</p>
+            </div>
+            <div class="pixel-decoration">
+                <div class="pixel-block"></div>
+                <div class="pixel-block"></div>
+                <div class="pixel-block"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+        <div class="product-icon">
+            <img src="IMG/pos-icon.png" alt="Sistema POS" class="product-icon-image">
+        </div>               
+        <h3 class="product-title">Sistema de Inventario y Ventas</h3>
+                    <p class="product-description">Sistema sencillo para registro de productos, control de inventario, movimiento de entradas y salidas; además de un corte de cada dia por turno.</p>
+                    <div class="product-price">$35.00</div>
+<button 
+    class="btn btn-secondary" 
+    onclick="abrirCompra()"> 
+    Comprar Ahora
+</button>                  
+<button class="btn btn-details" onclick="window.location.href='productos.html'">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>Creemos que el software no tiene que ser complicado para ser poderoso. Nuestra misión es demostrar que la simplicidad puede convertirse en una herramienta efectiva para resolver necesidades reales.</p>
+                    <p>Somos un equipo en crecimiento, comprometido con el desarrollo de soluciones que faciliten las tareas cotidianas y aporten valor desde su uso más básico.</p>
+                    <p>Buscamos crear experiencias que destaquen por su utilidad, claridad y carácter distintivo, siempre con un enfoque en la accesibilidad y la eficiencia. Además, también recibimos solicitudes y consultas por correo electrónico, para mantener una comunicación cercana y personalizada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="contacto" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contacta con Nosotros</h2>
+        <form class="contact-form" id="contact-form">
+            <input type="hidden" name="access_key" value="6c0ee254-2858-44c6-8a65-b5693ade3378">
+            
+            <!-- Configuración del email -->
+            <input type="hidden" name="subject" value="Nuevo mensaje de contacto - PacxStudio">
+            <input type="hidden" name="from_name" value="Formulario Web PacxStudio">
+            
+            <!-- Protección anti-spam (honeypot) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+                Enviar Mensaje
+            </button>
+        </form>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PacxStudio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    function abrirCompra() {
+        // La URL ya está fuera del atributo HTML, por lo que el editor no debería marcar error aquí.
+        window.open('https://payhip.com/b/B4kyl', '_blank');
+    }
+</script>
+</body>
+</html>
